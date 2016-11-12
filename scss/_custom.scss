@@ -1,7 +1,7 @@
-h2{
-
-    color:$primary-color;
+h2 {
+    color: $primary-color;
     font-size: 22px;
+    margin: rem-calc(20 0);
 }
 
 .promo-video {
@@ -62,6 +62,8 @@ h2{
 }
 
 section.rooms {
+    padding: rem-calc(30);
+
     div.room-image {
         position: relative;
 
@@ -82,12 +84,76 @@ section.rooms {
         padding: rem-calc(20);
     }
 }
-.button{
 
+.button {
     @include button-style($secondary-color,darken($secondary-color,10),$white);
     text-transform: uppercase;
     font-weight: bold;
-    font-size:rem-calc(16);
+    font-size: rem-calc(16);
     margin: rem-calc(20 0);
+}
 
+.separator-image {
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    @include breakpoint(medium) {
+        height: 350px;
+        background-size: cover;
+    }
+    @include breakpoint(large) {
+        background-size: cover;
+    }
+}
+
+.pool-image {
+    background-image: url("../assets/separators/small/separator01-image.jpg");
+    @include breakpoint(medium) {
+        background-image: url("../assets/separators/medium/separator01-image.jpg");
+    }
+    @include breakpoint(large) {
+        background-image: url("../assets/separators/large/separator01-image.jpg");
+    }
+}
+// about us section
+
+.about-us-gallery {
+    @include breakpoint(medium) {
+        height: rem-calc(560);
+        position: relative;
+    }
+    @include breakpoint(medium) {
+        height: rem-calc(420);
+    }
+
+    .empty {
+        @include breakpoint(medium) {
+            height: rem-calc(560);
+        }
+        @include breakpoint(medium) {
+            height: rem-calc(560);
+        }
+    }
+
+
+
+    div.content-about-us {
+        @include breakpoint(medium) {
+            position: absolute;
+            top: rem-calc(20);
+            left: 0;
+            width: 100%;
+
+            h2.white {
+                color: $white;
+            }
+        }
+    }
+}
+.bluebg {
+    background-color: $primary-color;
+}
+h2.white {
+    color: $white;
 }
