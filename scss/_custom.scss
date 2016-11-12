@@ -130,7 +130,7 @@ section.rooms {
 
 .about-us-gallery {
     @include breakpoint(medium) {
-        height: rem-calc(560);
+        height: rem-calc(420);
         position: relative;
     }
     @include breakpoint(medium) {
@@ -138,10 +138,10 @@ section.rooms {
     }
 
     .empty {
-        @include breakpoint(medium) {
+        @include breakpoint(large) {
             height: rem-calc(560);
         }
-        @include breakpoint(medium) {
+        @include breakpoint(large) {
             height: rem-calc(560);
         }
     }
@@ -170,4 +170,51 @@ h2.white {
 
 section.booking {
     padding: rem-calc(15);
+}
+
+footer {
+    background-color: $primary-color;
+    padding-top: rem-calc(30);
+    color: $white;
+
+    .menu {
+        a {
+            color: $white;
+        }
+    }
+
+    .contact-information {
+        li {
+            position: relative;
+            height: 100px;
+            padding-left: 60px;
+            padding-top: 35px;
+
+            &:first-child {
+                padding-top: rem-calc(22);
+            }
+
+            i {
+                font-size: rem-calc(60);
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+
+    }
+
+    .social {
+        i {
+            font-size: rem-calc(25);
+        }
+    }
+
+    p.copyright{
+
+        padding: rem-calc(20 0);
+        background-color: darken($primary-color,20);
+        margin:0;
+    }
 }
