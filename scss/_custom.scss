@@ -82,3 +82,12 @@ section.rooms {
         padding: rem-calc(20);
     }
 }
+.button{
+
+    @include button-style($secondary-color,darken($secondary-color,10),$white);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:rem-calc(16);
+    margin: rem-calc(20 0);
+
+}
