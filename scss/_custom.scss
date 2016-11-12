@@ -116,6 +116,16 @@ section.rooms {
         background-image: url("../assets/separators/large/separator01-image.jpg");
     }
 }
+
+.bar-image {
+    background-image: url("../assets/separators/small/separator02-image.jpg");
+    @include breakpoint(medium) {
+        background-image: url("../assets/separators/medium/separator02-image.jpg");
+    }
+    @include breakpoint(large) {
+        background-image: url("../assets/separators/large/separator02-image.jpg");
+    }
+}
 // about us section
 
 .about-us-gallery {
@@ -136,8 +146,6 @@ section.rooms {
         }
     }
 
-
-
     div.content-about-us {
         @include breakpoint(medium) {
             position: absolute;
@@ -151,9 +159,15 @@ section.rooms {
         }
     }
 }
+
 .bluebg {
     background-color: $primary-color;
 }
+
 h2.white {
     color: $white;
+}
+
+section.booking {
+    padding: rem-calc(15);
 }
