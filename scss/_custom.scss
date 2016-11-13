@@ -3,6 +3,21 @@ h2 {
     font-size: 22px;
     margin: rem-calc(20 0);
 }
+// off canvas
+
+div.off-canvas {
+    height: 100%;
+
+    a,
+    h3 {
+        color: $white;
+    }
+    .is-drilldown-submenu{
+        background-color: darken($primary-color,30);
+
+    }
+}
+//
 
 .promo-video {
     position: relative;
@@ -201,8 +216,6 @@ footer {
                 left: 0;
             }
         }
-
-
     }
 
     .social {
@@ -211,10 +224,9 @@ footer {
         }
     }
 
-    p.copyright{
-
+    p.copyright {
         padding: rem-calc(20 0);
         background-color: darken($primary-color,20);
-        margin:0;
+        margin: 0;
     }
 }
