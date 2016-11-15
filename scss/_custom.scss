@@ -24,7 +24,7 @@ div.off-canvas {
 }
 //
 
-.promo-video , .promo{
+.promo-video, .promo{
     position: relative;
 
     #overlay {
@@ -238,4 +238,8 @@ footer {
         background-color: darken($primary-color,20);
         margin: 0;
     }
+}
+// Internal pages
+section.content{
+    padding: rem-calc(30 0);
 }
