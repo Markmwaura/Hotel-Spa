@@ -1,5 +1,4 @@
-.is-reveal-open .off-canvas-wrapper{
-
+.is-reveal-open .off-canvas-wrapper {
     overflow-x: visible;
 }
 
@@ -17,14 +16,15 @@ div.off-canvas {
     h3 {
         color: $white;
     }
-    .is-drilldown-submenu{
-        background-color: darken($primary-color,30);
 
+    .is-drilldown-submenu {
+        background-color: darken($primary-color,30);
     }
 }
 //
 
-.promo-video, .promo{
+.promo,
+.promo-video {
     position: relative;
 
     #overlay {
@@ -182,11 +182,10 @@ section.rooms {
 .bluebg {
     background-color: $primary-color;
 }
-.medium-6.columns.empty.bluebg{
 
+.medium-6.columns.empty.bluebg {
     height: 100%;
 }
-
 
 h2.white {
     color: $white;
@@ -240,6 +239,15 @@ footer {
     }
 }
 // Internal pages
-section.content{
+
+section.content {
     padding: rem-calc(30 0);
+}
+// Services
+
+section.services {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
