@@ -9,7 +9,7 @@ function getHeight() {
 
 
 $(function() {
-    getHeight();
+
 
 
     $('#gallery a ').on('click', function() {
@@ -22,6 +22,8 @@ $(function() {
         $('#galleryModal #imageContainer').attr('src', fullpath);
 
     });
+
+    getHeight();
 
 
 });
