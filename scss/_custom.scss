@@ -83,6 +83,10 @@ div.off-canvas {
 section.rooms {
     padding: rem-calc(30);
 
+    a {
+        color: $black;
+    }
+
     div.room-image {
         position: relative;
 
@@ -145,8 +149,28 @@ section.rooms {
         background-image: url("../assets/separators/large/separator02-image.jpg");
     }
 }
-// about us section
 
+.rooms-image {
+    background-image: url("../assets/separators/small/separator03-image.jpg");
+    @include breakpoint(medium) {
+        background-image: url("../assets/separators/medium/separator03-image.jpg");
+    }
+    @include breakpoint(large) {
+        background-image: url("../assets/separators/large/separator03-image.jpg");
+    }
+}
+
+.room01-image {
+    background-image: url("../assets/separators/small/separator-room01-image.jpg");
+    @include breakpoint(medium) {
+        background-image: url("../assets/separators/medium/separator-room01-image.jpg");
+    }
+    @include breakpoint(large) {
+        background-image: url("../assets/separators/large/separator-room01-image.jpg");
+    }
+}
+
+// about us section
 .about-us-gallery {
     @include breakpoint(medium) {
         height: rem-calc(420);
@@ -249,5 +273,4 @@ section.services {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 }
