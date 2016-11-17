@@ -116,6 +116,12 @@ section.rooms {
     margin: rem-calc(20 0);
 }
 
+.button.reset {
+    @include button-hollow;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+}
+
 .separator-image {
     height: 200px;
     background-position: center center;
@@ -169,7 +175,6 @@ section.rooms {
         background-image: url("../assets/separators/large/separator-room01-image.jpg");
     }
 }
-
 // about us section
 .about-us-gallery {
     @include breakpoint(medium) {
